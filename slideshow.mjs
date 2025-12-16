@@ -5,6 +5,8 @@ const name = "-AndersJourneyLearningRust"
  */
 let slides = [] 
 for (let i = 0; i <= 20; i++) {
+	// like 09-AndersJourneyLearningRust.png ...
+	//      10-AndersJourneyLearningRust.png ...
 	slides.push(
 		`slides/${
 			(i + 1) < 10 
