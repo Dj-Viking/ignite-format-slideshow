@@ -1,10 +1,16 @@
 
+const name = "-AndersJourneyLearningRust"
 /**
  * @type {string[]}
  */
 let slides = [] 
 for (let i = 0; i <= 20; i++) {
-	slides.push(`slides/${i + 1}.png`);
+	slides.push(
+		`slides/${
+			(i + 1) < 10 
+				? (`0${i + 1}`) 
+				: i + 1
+		}${name}.png`);
 }
 
 let img      = document.querySelector("img");
