@@ -1,7 +1,6 @@
 import fs from "fs";
 import http from "http";
 
-
 const handlereq = (req, res) => {
 	switch(true) {
 
@@ -80,7 +79,7 @@ const handlereq = (req, res) => {
 
 	}
 
-});
+};
 
 
 const server = http.createServer((req, res) => {
@@ -89,3 +88,8 @@ const server = http.createServer((req, res) => {
     handlereq(req, res);
 });
 
+function main () {
+	server.listen(8080);
+}
+
+main();
